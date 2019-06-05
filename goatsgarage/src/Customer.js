@@ -1,52 +1,24 @@
 import React, { Component } from 'react';
+import Form from "./Form"
 
 
 class Customer extends Component {
-    constructor() {
-        super()
-        this.state = {
-            customerName:"",
-            address:"",
-            vinNumber:"",
-            serviceRequested:[]
-        }
-    }
-
     render() {
         return (
-            <div>
-                <form>
-                    <input 
-                        name="customerName" 
-                        placeholder="Customer Name"
-                        value={this.state.customerName} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    <input 
-                        name="address" 
-                        placeholder="Address"
-                        value={this.state.address} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    <input 
-                        name="vinNumber"
-                        placeholder="Vehicle VIN Number" 
-                        value={this.state.vinNumber} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    <input 
-                        name="serviceRequested" 
-                        placeholder="Service Requested"
-                        value={this.state.serviceRequested} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    
-
-                </form>
-
-            </div>
-        )
+          <div className="Customer">
+            <header className="Customer-header">
+            </header>
+              
+                <h1>Customer Information</h1>
+                    <h2>{this.props.customerName}</h2>
+                    <h2>{this.props.address}</h2>
+                    <h2>{this.props.vinNumber}</h2>
+                    <h2></h2>
+    
+            
+          </div>
+        );
+      }
     }
-}
 
 export default Customer
