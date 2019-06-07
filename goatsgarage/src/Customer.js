@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
-import Form from "./Form"
+import FormLogic from "./FormLogic"
 
 
-class Customer extends Component {
-    render() {
+function Customer(props){
+   
         return (
           <div className="Customer">
             <header className="Customer-header">
             </header>
               
                 <h1>Customer Information</h1>
-                    <h2>{this.props.customerName}</h2>
-                    <h2>{this.props.address}</h2>
-                    <h2>{this.props.vinNumber}</h2>
+                    <h2>{data.props.customerName}</h2>
+                    <h2>{data.props.address}</h2>
+                    <h2>{props.data.vinNumber}</h2>
                     <h2></h2>
     
             
           </div>
         );
       }
-    }
 
 export default Customer
