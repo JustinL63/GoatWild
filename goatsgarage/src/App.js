@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Customer from './Customer'
-import FormLogic from "./FormLogic"
-import FormRender from "./FormRender"
+import FormComponent from "./FormComponent"
+
 
 function App() {
   return(
@@ -12,10 +11,10 @@ function App() {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
               <h1>Goat Wild's Garage</h1>
-              <FormRender />
-              <Customer />
+              </header>
+              <FormComponent />
   
-          </header>
+          
         </div>
 
   )
